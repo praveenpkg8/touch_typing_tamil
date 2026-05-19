@@ -2,7 +2,11 @@
   "name": "tamil99-typing-tutor",
   "private": true,
   "version": "0.0.1",
+  "description": "Privacy-first Tamil typing tutor for the Tamil99 keyboard layout. Client-only, local-first, no backend.",
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
