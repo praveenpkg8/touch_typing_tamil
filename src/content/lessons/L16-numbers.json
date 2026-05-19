@@ -1,0 +1,28 @@
+{
+  "id": "L16-numbers",
+  "schemaVersion": 1,
+  "level": 4,
+  "type": "word",
+  "title": {
+    "ta": "எண்கள்",
+    "en": "Tamil number words"
+  },
+  "introducedGraphemes": [],
+  "introducedKeys": [],
+  "prerequisites": [
+    "L10-gemination",
+    "L11-soft-hard-pairs",
+    "L14-simple-words"
+  ],
+  "drills": [
+    { "target": "ஒன்று இரண்டு மூன்று", "repeats": 3 },
+    { "target": "நான்கு ஐந்து ஆறு", "repeats": 3 },
+    { "target": "ஏழு எட்டு ஒன்பது பத்து", "repeats": 3 },
+    { "target": "ஒன்று இரண்டு மூன்று நான்கு ஐந்து", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 88,
+    "minGPM": 13
+  },
+  "showComposition": "on-error"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "L20-speed-practice",
+  "schemaVersion": 1,
+  "level": 6,
+  "type": "speed",
+  "title": {
+    "ta": "வேக பயிற்சி",
+    "en": "Speed practice"
+  },
+  "introducedGraphemes": [],
+  "introducedKeys": [],
+  "prerequisites": ["L18-simple-sentences"],
+  "drills": [
+    { "target": "நான் தமிழ் பேசுகிறேன் நான் தமிழ் பேசுகிறேன்", "repeats": 2 },
+    { "target": "காலை மாலை வணக்கம் நன்றி நலம்", "repeats": 3 },
+    { "target": "மரம் கனி பழம் நிலா மழை வீடு", "repeats": 3 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 85,
+    "minGPM": 22
+  },
+  "showComposition": "never"
+}

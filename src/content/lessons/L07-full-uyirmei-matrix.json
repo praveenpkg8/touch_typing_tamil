@@ -1,0 +1,31 @@
+{
+  "id": "L07-full-uyirmei-matrix",
+  "schemaVersion": 1,
+  "level": 3,
+  "type": "char_drill",
+  "title": {
+    "ta": "முழு உயிர்மெய் அட்டவணை",
+    "en": "Full uyirmei matrix"
+  },
+  "introducedGraphemes": [
+    "கொ", "கோ", "கௌ",
+    "மொ", "மோ", "மௌ",
+    "தொ", "தோ", "தௌ"
+  ],
+  "introducedKeys": [],
+  "prerequisites": [
+    "L03-uyirmei-intro",
+    "L05-long-uyirmei",
+    "L06-bottom-row-uyir"
+  ],
+  "drills": [
+    { "target": "க கா கி கீ கு கூ கெ கே கை கொ கோ கௌ", "repeats": 2 },
+    { "target": "ம மா மி மீ மு மூ மெ மே மை மொ மோ மௌ", "repeats": 2 },
+    { "target": "த தா தி தீ து தூ தெ தே தை தொ தோ தௌ", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 88,
+    "minGPM": 14
+  },
+  "showComposition": "on-error"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "L04-top-row-uyir",
+  "schemaVersion": 1,
+  "level": 1,
+  "type": "char_drill",
+  "title": {
+    "ta": "மேல் வரிசை உயிர்கள்",
+    "en": "Top row vowels (long forms)"
+  },
+  "introducedGraphemes": ["ஆ", "ஈ", "ஊ", "ஐ", "ஏ"],
+  "introducedKeys": ["KeyQ", "KeyW", "KeyE", "KeyR", "KeyT"],
+  "prerequisites": [],
+  "drills": [
+    { "target": "ஆ ஈ ஊ ஐ ஏ", "repeats": 3 },
+    { "target": "ஆ ஆ ஈ ஈ ஊ ஊ ஐ ஐ ஏ ஏ", "repeats": 2 },
+    { "target": "ஆ ஈ ஊ ஐ ஏ ஆ ஈ ஊ ஐ ஏ", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 15
+  },
+  "showComposition": "never"
+}

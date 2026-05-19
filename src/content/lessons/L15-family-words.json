@@ -1,0 +1,29 @@
+{
+  "id": "L15-family-words",
+  "schemaVersion": 1,
+  "level": 4,
+  "type": "word",
+  "title": {
+    "ta": "குடும்பச் சொற்கள்",
+    "en": "Family words"
+  },
+  "introducedGraphemes": [],
+  "introducedKeys": [],
+  "prerequisites": [
+    "L10-gemination",
+    "L11-soft-hard-pairs",
+    "L14-simple-words"
+  ],
+  "drills": [
+    { "target": "அப்பா அம்மா", "repeats": 3 },
+    { "target": "அண்ணன் அக்கா", "repeats": 3 },
+    { "target": "தம்பி தங்கை", "repeats": 3 },
+    { "target": "மகன் மகள்", "repeats": 3 },
+    { "target": "பாட்டி தாத்தா", "repeats": 3 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 88,
+    "minGPM": 13
+  },
+  "showComposition": "on-error"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "L13-bracket-mei",
+  "schemaVersion": 1,
+  "level": 3,
+  "type": "char_drill",
+  "title": {
+    "ta": "மிகுந்த மெய்கள்",
+    "en": "Remaining consonants"
+  },
+  "introducedGraphemes": ["ச", "ஞ", "ய", "ழ"],
+  "introducedKeys": ["BracketLeft", "BracketRight", "Quote", "Slash"],
+  "prerequisites": [],
+  "drills": [
+    { "target": "ச ஞ ய ழ", "repeats": 3 },
+    { "target": "ச ச ஞ ஞ ய ய ழ ழ", "repeats": 2 },
+    { "target": "ச ஞ ய ழ ச ஞ ய ழ", "repeats": 2 },
+    { "target": "சா யா ழா ஞா", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 13
+  },
+  "showComposition": "never"
+}

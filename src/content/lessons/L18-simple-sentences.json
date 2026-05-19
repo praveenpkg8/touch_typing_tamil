@@ -1,0 +1,24 @@
+{
+  "id": "L18-simple-sentences",
+  "schemaVersion": 1,
+  "level": 5,
+  "type": "sentence",
+  "title": {
+    "ta": "எளிய வாக்கியங்கள்",
+    "en": "Simple sentences"
+  },
+  "introducedGraphemes": [],
+  "introducedKeys": [],
+  "prerequisites": ["L14-simple-words", "L17-greetings"],
+  "drills": [
+    { "target": "நான் தமிழ் பேசுகிறேன்", "repeats": 2 },
+    { "target": "அம்மா வீட்டில் இருக்கிறார்", "repeats": 2 },
+    { "target": "நான் பள்ளிக்கு செல்கிறேன்", "repeats": 2 },
+    { "target": "என் பெயர் ராமன்", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 85,
+    "minGPM": 14
+  },
+  "showComposition": "never"
+}

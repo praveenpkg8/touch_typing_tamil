@@ -1,0 +1,24 @@
+{
+  "id": "L12-bottom-mei-left",
+  "schemaVersion": 1,
+  "level": 3,
+  "type": "char_drill",
+  "title": {
+    "ta": "கீழ் வரிசை மெய்கள் (இடது)",
+    "en": "Bottom row consonants (left)"
+  },
+  "introducedGraphemes": ["ங", "ல", "ர", "வ"],
+  "introducedKeys": ["KeyB", "KeyN", "KeyM", "KeyV"],
+  "prerequisites": [],
+  "drills": [
+    { "target": "ங ல ர வ", "repeats": 3 },
+    { "target": "ங ங ல ல ர ர வ வ", "repeats": 2 },
+    { "target": "ங ல ர வ ங ல ர வ", "repeats": 2 },
+    { "target": "வா லா ரா ஙா", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 14
+  },
+  "showComposition": "never"
+}

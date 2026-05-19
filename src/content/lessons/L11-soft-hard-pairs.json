@@ -1,0 +1,24 @@
+{
+  "id": "L11-soft-hard-pairs",
+  "schemaVersion": 1,
+  "level": 3,
+  "type": "char_drill",
+  "title": {
+    "ta": "மென்-வன் இணைகள்",
+    "en": "Soft-hard consonant pairs"
+  },
+  "introducedGraphemes": ["ந்த", "ண்ட", "ம்ப", "ன்ற"],
+  "introducedKeys": [],
+  "prerequisites": ["L01-home-row-mei", "L08-top-row-mei", "L09-pulli"],
+  "drills": [
+    { "target": "ந்த ண்ட ம்ப ன்ற", "repeats": 3 },
+    { "target": "ந்தா ண்டா ம்பா ன்றா", "repeats": 2 },
+    { "target": "ந்தி ண்டி ம்பி ன்றி", "repeats": 2 },
+    { "target": "ந்தே ண்டே ம்பே ன்றே", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 85,
+    "minGPM": 12
+  },
+  "showComposition": "always"
+}

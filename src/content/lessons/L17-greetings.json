@@ -1,0 +1,28 @@
+{
+  "id": "L17-greetings",
+  "schemaVersion": 1,
+  "level": 4,
+  "type": "word",
+  "title": {
+    "ta": "வாழ்த்துக்கள்",
+    "en": "Greetings & courtesy"
+  },
+  "introducedGraphemes": [],
+  "introducedKeys": [],
+  "prerequisites": [
+    "L10-gemination",
+    "L11-soft-hard-pairs",
+    "L14-simple-words"
+  ],
+  "drills": [
+    { "target": "வணக்கம் நன்றி", "repeats": 3 },
+    { "target": "நலம் காலை மாலை", "repeats": 3 },
+    { "target": "சரி நிச்சயம் கண்டிப்பாக", "repeats": 2 },
+    { "target": "வணக்கம் நலமா நன்றி", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 87,
+    "minGPM": 12
+  },
+  "showComposition": "on-error"
+}

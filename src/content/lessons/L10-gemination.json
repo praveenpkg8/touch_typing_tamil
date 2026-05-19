@@ -1,0 +1,23 @@
+{
+  "id": "L10-gemination",
+  "schemaVersion": 1,
+  "level": 3,
+  "type": "char_drill",
+  "title": {
+    "ta": "இரட்டிப்பு",
+    "en": "Doubled consonants (gemination)"
+  },
+  "introducedGraphemes": ["க்க", "ப்ப", "ம்ம", "த்த", "ந்ந"],
+  "introducedKeys": [],
+  "prerequisites": ["L01-home-row-mei", "L09-pulli"],
+  "drills": [
+    { "target": "க்க ப்ப ம்ம த்த ந்ந", "repeats": 3 },
+    { "target": "க்கா ப்பா ம்மா த்தா ந்நா", "repeats": 2 },
+    { "target": "க்கி ப்பி ம்மி த்தி ந்நி", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 88,
+    "minGPM": 13
+  },
+  "showComposition": "always"
+}

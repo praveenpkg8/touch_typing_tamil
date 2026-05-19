@@ -1,0 +1,23 @@
+{
+  "id": "L06-bottom-row-uyir",
+  "schemaVersion": 1,
+  "level": 2,
+  "type": "char_drill",
+  "title": {
+    "ta": "கீழ் வரிசை உயிர்கள்",
+    "en": "Bottom row vowels"
+  },
+  "introducedGraphemes": ["ஒ", "ஓ", "ஔ"],
+  "introducedKeys": ["KeyC", "KeyX", "KeyZ"],
+  "prerequisites": [],
+  "drills": [
+    { "target": "ஒ ஓ ஔ", "repeats": 4 },
+    { "target": "ஒ ஒ ஓ ஓ ஔ ஔ", "repeats": 2 },
+    { "target": "ஒ ஓ ஔ ஒ ஓ ஔ", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 12
+  },
+  "showComposition": "never"
+}

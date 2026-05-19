@@ -1,0 +1,31 @@
+{
+  "id": "L05-long-uyirmei",
+  "schemaVersion": 1,
+  "level": 2,
+  "type": "char_drill",
+  "title": {
+    "ta": "நெடில் உயிர்மெய்",
+    "en": "Consonants + long vowels"
+  },
+  "introducedGraphemes": [
+    "கா", "கீ", "கூ", "கை", "கே",
+    "மா", "மீ", "மூ", "மை", "மே",
+    "தா", "தீ", "தூ", "தை", "தே",
+    "நா", "நீ", "நூ", "நை", "நே",
+    "பா", "பீ", "பூ", "பை", "பே"
+  ],
+  "introducedKeys": [],
+  "prerequisites": ["L01-home-row-mei", "L02-home-row-uyir", "L04-top-row-uyir"],
+  "drills": [
+    { "target": "கா மா தா நா பா", "repeats": 3 },
+    { "target": "கீ மீ தீ நீ பீ", "repeats": 3 },
+    { "target": "கூ மூ தூ நூ பூ", "repeats": 2 },
+    { "target": "கை மை தை நை பை", "repeats": 2 },
+    { "target": "கே மே தே நே பே", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 13
+  },
+  "showComposition": "always"
+}

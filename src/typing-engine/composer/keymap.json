@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "source": "m17n/ta-tamil99.mim",
+  "sourceSha256": "93615533b7554fe0afe4f3c0e67b294e74fe485747b5c48a30772bdf9654aeb4",
+  "unshifted": {
+    "Backslash": {
+      "output": "\\",
+      "kind": "other"
+    },
+    "BracketLeft": {
+      "output": "ச",
+      "kind": "mei"
+    },
+    "BracketRight": {
+      "output": "ஞ",
+      "kind": "mei"
+    },
+    "KeyA": {
+      "output": "அ",
+      "kind": "uyir"
+    },
+    "KeyB": {
+      "output": "ங",
+      "kind": "mei"
+    },
+    "KeyC": {
+      "output": "ஒ",
+      "kind": "uyir"
+    },
+    "KeyD": {
+      "output": "உ",
+      "kind": "uyir"
+    },
+    "KeyE": {
+      "output": "ஊ",
+      "kind": "uyir"
+    },
+    "KeyF": {
+      "output": "்",
+      "kind": "mei+pulli"
+    },
+    "KeyG": {
+      "output": "எ",
+      "kind": "uyir"
+    },
+    "KeyH": {
+      "output": "க",
+      "kind": "mei"
+    },
+    "KeyI": {
+      "output": "ன",
+      "kind": "mei"
+    },
+    "KeyJ": {
+      "output": "ப",
+      "kind": "mei"
+    },
+    "KeyK": {
+      "output": "ம",
+      "kind": "mei"
+    },
+    "KeyL": {
+      "output": "த",
+      "kind": "mei"
+    },
+    "KeyM": {
+      "output": "ர",
+      "kind": "mei"
+    },
+    "KeyN": {
+      "output": "ல",
+      "kind": "mei"
+    },
+    "KeyO": {
+      "output": "ட",
+      "kind": "mei"
+    },
+    "KeyP": {
+      "output": "ண",
+      "kind": "mei"
+    },
+    "KeyQ": {
+      "output": "ஆ",
+      "kind": "uyir"
+    },
+    "KeyR": {
+      "output": "ஐ",
+      "kind": "uyir"
+    },
+    "KeyS": {
+      "output": "இ",
+      "kind": "uyir"
+    },
+    "KeyT": {
+      "output": "ஏ",
+      "kind": "uyir"
+    },
+    "KeyU": {
+      "output": "ற",
+      "kind": "mei"
+    },
+    "KeyV": {
+      "output": "வ",
+      "kind": "mei"
+    },
+    "KeyW": {
+      "output": "ஈ",
+      "kind": "uyir"
+    },
+    "KeyX": {
+      "output": "ஓ",
+      "kind": "uyir"
+    },
+    "KeyY": {
+      "output": "ள",
+      "kind": "mei"
+    },
+    "KeyZ": {
+      "output": "ஔ",
+      "kind": "uyir"
+    },
+    "Quote": {
+      "output": "ய",
+      "kind": "mei"
+    },
+    "Semicolon": {
+      "output": "ந",
+      "kind": "mei"
+    },
+    "Slash": {
+      "output": "ழ",
+      "kind": "mei"
+    }
+  },
+  "shifted": {
+    "BracketLeft": {
+      "output": "{",
+      "kind": "other"
+    },
+    "BracketRight": {
+      "output": "}",
+      "kind": "other"
+    },
+    "KeyA": {
+      "output": "௹",
+      "kind": "other"
+    },
+    "KeyB": {
+      "output": "௷",
+      "kind": "other"
+    },
+    "KeyC": {
+      "output": "௵",
+      "kind": "other"
+    },
+    "KeyD": {
+      "output": "௸",
+      "kind": "other"
+    },
+    "KeyE": {
+      "output": "ஜ",
+      "kind": "mei"
+    },
+    "KeyF": {
+      "output": "ஃ",
+      "kind": "other"
+    },
+    "KeyK": {
+      "output": "\"",
+      "kind": "other"
+    },
+    "KeyL": {
+      "output": ":",
+      "kind": "other"
+    },
+    "KeyM": {
+      "output": "/",
+      "kind": "other"
+    },
+    "KeyN": {
+      "output": "ௐ",
+      "kind": "other"
+    },
+    "KeyO": {
+      "output": "[",
+      "kind": "other"
+    },
+    "KeyP": {
+      "output": "]",
+      "kind": "other"
+    },
+    "KeyQ": {
+      "output": "ஸ",
+      "kind": "mei"
+    },
+    "KeyR": {
+      "output": "ஹ",
+      "kind": "mei"
+    },
+    "KeyS": {
+      "output": "௺",
+      "kind": "other"
+    },
+    "KeyT": {
+      "output": "க்ஷ",
+      "kind": "mei"
+    },
+    "KeyU": {
+      "output": "ஶ",
+      "kind": "mei"
+    },
+    "KeyV": {
+      "output": "௶",
+      "kind": "other"
+    },
+    "KeyW": {
+      "output": "ஷ",
+      "kind": "mei"
+    },
+    "KeyX": {
+      "output": "௴",
+      "kind": "other"
+    },
+    "KeyY": {
+      "output": "ஶ்ரீ",
+      "kind": "vowel-sign"
+    },
+    "KeyZ": {
+      "output": "௳",
+      "kind": "other"
+    },
+    "Quote": {
+      "output": "'",
+      "kind": "other"
+    },
+    "Semicolon": {
+      "output": ";",
+      "kind": "other"
+    }
+  },
+  "altgr": {
+    "Digit0": {
+      "output": "௦",
+      "kind": "other"
+    },
+    "Digit1": {
+      "output": "௧",
+      "kind": "other"
+    },
+    "Digit2": {
+      "output": "௨",
+      "kind": "other"
+    },
+    "Digit3": {
+      "output": "௩",
+      "kind": "other"
+    },
+    "Digit4": {
+      "output": "௪",
+      "kind": "other"
+    },
+    "Digit5": {
+      "output": "௫",
+      "kind": "other"
+    },
+    "Digit6": {
+      "output": "௬",
+      "kind": "other"
+    },
+    "Digit7": {
+      "output": "௭",
+      "kind": "other"
+    },
+    "Digit8": {
+      "output": "௮",
+      "kind": "other"
+    },
+    "Digit9": {
+      "output": "௯",
+      "kind": "other"
+    },
+    "KeyC": {
+      "output": "ொ",
+      "kind": "vowel-sign"
+    },
+    "KeyD": {
+      "output": "ு",
+      "kind": "vowel-sign"
+    },
+    "KeyE": {
+      "output": "ூ",
+      "kind": "vowel-sign"
+    },
+    "KeyG": {
+      "output": "ெ",
+      "kind": "vowel-sign"
+    },
+    "KeyI": {
+      "output": "௰",
+      "kind": "other"
+    },
+    "KeyO": {
+      "output": "௱",
+      "kind": "other"
+    },
+    "KeyP": {
+      "output": "௲",
+      "kind": "other"
+    },
+    "KeyQ": {
+      "output": "ா",
+      "kind": "vowel-sign"
+    },
+    "KeyR": {
+      "output": "ை",
+      "kind": "vowel-sign"
+    },
+    "KeyS": {
+      "output": "ி",
+      "kind": "vowel-sign"
+    },
+    "KeyT": {
+      "output": "ே",
+      "kind": "vowel-sign"
+    },
+    "KeyW": {
+      "output": "ீ",
+      "kind": "vowel-sign"
+    },
+    "KeyX": {
+      "output": "ோ",
+      "kind": "vowel-sign"
+    },
+    "KeyZ": {
+      "output": "ௌ",
+      "kind": "vowel-sign"
+    }
+  },
+  "altgrShift": {
+    "Digit1": {
+      "output": "¼",
+      "kind": "other"
+    },
+    "Digit2": {
+      "output": "½",
+      "kind": "other"
+    },
+    "Digit3": {
+      "output": "¾",
+      "kind": "other"
+    },
+    "Digit4": {
+      "output": "₹",
+      "kind": "other"
+    }
+  },
+  "uyirToSign": {
+    "அ": null,
+    "ஆ": "ா",
+    "இ": "ி",
+    "ஈ": "ீ",
+    "உ": "ு",
+    "ஊ": "ூ",
+    "எ": "ெ",
+    "ஏ": "ே",
+    "ஐ": "ை",
+    "ஒ": "ொ",
+    "ஓ": "ோ",
+    "ஔ": "ௌ"
+  },
+  "softHardPairs": [
+    [
+      "ங",
+      "க"
+    ],
+    [
+      "ஞ",
+      "ச"
+    ],
+    [
+      "ந",
+      "த"
+    ],
+    [
+      "ண",
+      "ட"
+    ],
+    [
+      "ம",
+      "ப"
+    ],
+    [
+      "ன",
+      "ற"
+    ]
+  ],
+  "pulliCode": "KeyF",
+  "pulliCodepoint": "்"
+}

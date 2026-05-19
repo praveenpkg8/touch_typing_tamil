@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Inter', system-ui, sans-serif;
+    --font-tamil: 'Noto Sans Tamil', 'Latha', sans-serif;
+  }
+  .font-tamil {
+    font-family: var(--font-tamil);
+  }
+}
+
+@layer utilities {
+  .key-base {
+    @apply relative flex flex-col items-center justify-center rounded-md border border-slate-300 bg-white text-xs font-medium shadow-sm select-none;
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+  .key-tamil {
+    font-family: var(--font-tamil);
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+  .key-finger-l-pinky { @apply bg-violet-50; }
+  .key-finger-l-ring  { @apply bg-sky-50; }
+  .key-finger-l-mid   { @apply bg-emerald-50; }
+  .key-finger-l-index { @apply bg-amber-50; }
+  .key-finger-r-index { @apply bg-amber-50; }
+  .key-finger-r-mid   { @apply bg-emerald-50; }
+  .key-finger-r-ring  { @apply bg-sky-50; }
+  .key-finger-r-pinky { @apply bg-violet-50; }
+}

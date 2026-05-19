@@ -1,0 +1,24 @@
+{
+  "id": "L19-complex-sentences",
+  "schemaVersion": 1,
+  "level": 5,
+  "type": "sentence",
+  "title": {
+    "ta": "மேலும் வாக்கியங்கள்",
+    "en": "Longer sentences"
+  },
+  "introducedGraphemes": [],
+  "introducedKeys": [],
+  "prerequisites": ["L18-simple-sentences"],
+  "drills": [
+    { "target": "காலையில் சூரியன் உதயமாகிறது", "repeats": 2 },
+    { "target": "மாலையில் மழை பெய்தது", "repeats": 2 },
+    { "target": "என் நண்பன் என்னுடன் விளையாடுகிறான்", "repeats": 2 },
+    { "target": "தமிழ் மொழி மிகவும் இனிமையானது", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 85,
+    "minGPM": 16
+  },
+  "showComposition": "never"
+}

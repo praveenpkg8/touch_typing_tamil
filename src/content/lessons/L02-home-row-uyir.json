@@ -1,0 +1,23 @@
+{
+  "id": "L02-home-row-uyir",
+  "schemaVersion": 1,
+  "level": 1,
+  "type": "char_drill",
+  "title": {
+    "ta": "வீட்டு வரிசை உயிர்கள்",
+    "en": "Home row vowels"
+  },
+  "introducedGraphemes": ["அ", "இ", "உ", "எ"],
+  "introducedKeys": ["KeyA", "KeyS", "KeyD", "KeyG"],
+  "prerequisites": [],
+  "drills": [
+    { "target": "அ இ உ எ", "repeats": 3 },
+    { "target": "அ அ இ இ உ உ எ எ", "repeats": 2 },
+    { "target": "அ இ உ எ அ இ உ எ", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 15
+  },
+  "showComposition": "never"
+}

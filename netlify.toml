@@ -1,0 +1,46 @@
+# Netlify configuration for Tamil99 Typing Tutor.
+#
+# The app is a pure static SPA — no serverless functions, no env vars.
+# Deploy by either:
+#   1. Connecting this repo in the Netlify dashboard (auto-detect from this file), or
+#   2. CLI: `npx netlify-cli deploy --prod`
+#   3. Manual: `npm run build` then drag `dist/` into Netlify drop zone
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # tsx + import.meta.dirname in the parser script need Node 22.
+  # Vite build itself works on 18+, but matching dev tooling avoids surprises.
+  NODE_VERSION = "22"
+
+# SPA fallback: any unknown path returns index.html so the React app
+# can render it. We don't use client routing today, but this protects
+# us from 404s if the user bookmarks a sub-route in the future.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Long-lived cache on hashed assets (Vite emits content-hashed filenames).
+# HTML stays uncached so updates roll out instantly on next refresh.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# Tamil typing tutor doesn't make any cross-origin requests, so a
+# tight CSP is safe and worthwhile. Adjust if you add analytics later.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

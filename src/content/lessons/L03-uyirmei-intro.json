@@ -1,0 +1,23 @@
+{
+  "id": "L03-uyirmei-intro",
+  "schemaVersion": 1,
+  "level": 2,
+  "type": "char_drill",
+  "title": {
+    "ta": "உயிர்மெய் தொடக்கம்",
+    "en": "Combining consonants and vowels"
+  },
+  "introducedGraphemes": ["க", "கி", "கு", "கெ", "ம", "மி", "மு", "மெ"],
+  "introducedKeys": ["KeyH", "KeyK", "KeyS", "KeyD", "KeyG"],
+  "prerequisites": ["L01-home-row-mei", "L02-home-row-uyir"],
+  "drills": [
+    { "target": "க கி கு கெ", "repeats": 3 },
+    { "target": "ம மி மு மெ", "repeats": 3 },
+    { "target": "கி மு கெ மி கு மெ", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 12
+  },
+  "showComposition": "always"
+}

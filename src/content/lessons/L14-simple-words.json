@@ -1,0 +1,30 @@
+{
+  "id": "L14-simple-words",
+  "schemaVersion": 1,
+  "level": 4,
+  "type": "word",
+  "title": {
+    "ta": "எளிய சொற்கள்",
+    "en": "Simple Tamil words"
+  },
+  "introducedGraphemes": [],
+  "introducedKeys": [],
+  "prerequisites": [
+    "L05-long-uyirmei",
+    "L08-top-row-mei",
+    "L09-pulli",
+    "L12-bottom-mei-left",
+    "L13-bracket-mei"
+  ],
+  "drills": [
+    { "target": "மா பா தா நா கா", "repeats": 2 },
+    { "target": "நான் நீ அது இது என்", "repeats": 2 },
+    { "target": "கல் பல் நாள் வா பால்", "repeats": 2 },
+    { "target": "மரம் கனி பழம் மழை நிலா", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 88,
+    "minGPM": 14
+  },
+  "showComposition": "on-error"
+}

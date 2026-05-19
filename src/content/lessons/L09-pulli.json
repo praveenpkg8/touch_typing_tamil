@@ -1,0 +1,23 @@
+{
+  "id": "L09-pulli",
+  "schemaVersion": 1,
+  "level": 2,
+  "type": "char_drill",
+  "title": {
+    "ta": "புள்ளி (மெய்யெழுத்து)",
+    "en": "Pulli — pure consonants"
+  },
+  "introducedGraphemes": ["க்", "ப்", "ம்", "த்", "ந்"],
+  "introducedKeys": ["KeyF"],
+  "prerequisites": ["L01-home-row-mei"],
+  "drills": [
+    { "target": "க் ப் ம் த் ந்", "repeats": 3 },
+    { "target": "க் க் ப் ப் ம் ம் த் த் ந் ந்", "repeats": 2 },
+    { "target": "க் த் ந் ப் ம் க் த் ந்", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 12
+  },
+  "showComposition": "always"
+}

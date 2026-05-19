@@ -1,0 +1,23 @@
+{
+  "id": "L01-home-row-mei",
+  "schemaVersion": 1,
+  "level": 1,
+  "type": "char_drill",
+  "title": {
+    "ta": "வீட்டு வரிசை மெய்கள்",
+    "en": "Home row consonants"
+  },
+  "introducedGraphemes": ["க", "ப", "ம", "த", "ந"],
+  "introducedKeys": ["KeyH", "KeyJ", "KeyK", "KeyL", "Semicolon"],
+  "prerequisites": [],
+  "drills": [
+    { "target": "க ப ம த ந", "repeats": 3 },
+    { "target": "க க ப ப ம ம த த ந ந", "repeats": 2 },
+    { "target": "க ம ந ப த க ம ந ப த", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 15
+  },
+  "showComposition": "never"
+}

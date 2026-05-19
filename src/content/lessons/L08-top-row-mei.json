@@ -1,0 +1,23 @@
+{
+  "id": "L08-top-row-mei",
+  "schemaVersion": 1,
+  "level": 2,
+  "type": "char_drill",
+  "title": {
+    "ta": "மேல் வரிசை மெய்கள்",
+    "en": "Top row consonants"
+  },
+  "introducedGraphemes": ["ள", "ற", "ன", "ட", "ண"],
+  "introducedKeys": ["KeyY", "KeyU", "KeyI", "KeyO", "KeyP"],
+  "prerequisites": [],
+  "drills": [
+    { "target": "ள ற ன ட ண", "repeats": 3 },
+    { "target": "ள ள ற ற ன ன ட ட ண ண", "repeats": 2 },
+    { "target": "ள ற ன ட ண ள ற ன ட ண", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 90,
+    "minGPM": 15
+  },
+  "showComposition": "never"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "L21-accuracy-challenge",
+  "schemaVersion": 1,
+  "level": 7,
+  "type": "accuracy",
+  "title": {
+    "ta": "துல்லியப் போட்டி",
+    "en": "Accuracy challenge"
+  },
+  "introducedGraphemes": [],
+  "introducedKeys": [],
+  "prerequisites": ["L18-simple-sentences"],
+  "drills": [
+    { "target": "அண்ணன் அக்கா தம்பி தங்கை", "repeats": 2 },
+    { "target": "ஒன்று இரண்டு மூன்று நான்கு ஐந்து", "repeats": 2 },
+    { "target": "என் பெயர் ராமன் என் ஊர் சென்னை", "repeats": 2 },
+    { "target": "தமிழ் மொழி எங்கள் தாய்மொழி", "repeats": 2 }
+  ],
+  "completion": {
+    "minAccuracyGraphemes": 95,
+    "minGPM": 14
+  },
+  "showComposition": "never"
+}
