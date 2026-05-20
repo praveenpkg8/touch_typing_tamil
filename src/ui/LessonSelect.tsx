@@ -7,6 +7,7 @@ import { LESSONS, type Lesson } from '../content/lessons/index.ts';
 import { db, DEFAULT_USER_ID } from '../persistence/index.ts';
 import { useRecommendation } from '../recommendation/index.ts';
 import { RecommendationCard } from './RecommendationCard.tsx';
+import { MobileNotice } from './MobileNotice.tsx';
 
 interface LessonSelectProps {
   onStart: (lesson: Lesson) => void;
@@ -38,6 +39,7 @@ export function LessonSelect({
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-10 space-y-6">
+      <MobileNotice />
       <header className="flex items-start justify-between gap-4">
         <div className="space-y-2">
           <h1 className="text-3xl font-semibold text-slate-900">

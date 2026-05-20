@@ -15,32 +15,98 @@
   # Vite build itself works on 18+, but matching dev tooling avoids surprises.
   NODE_VERSION = "22"
 
+# ─────────────────────────────────────────────────────────────────────────
+# Redirects
+#
+# Order matters. Netlify processes redirects top-to-bottom. The SPA
+# catch-all MUST be last so static files in `public/` (robots.txt,
+# sitemap.xml, llms.txt, favicon.svg) are served on their own paths and
+# don't accidentally return the React shell HTML.
+#
+# Netlify normally serves files in `publish/` before applying redirects,
+# but adding explicit pass-throughs is belt-and-braces in case a CDN-edge
+# cache from a prior deploy has poisoned the path.
+# ─────────────────────────────────────────────────────────────────────────
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/llms.txt"
+  to = "/llms.txt"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/favicon.svg"
+  to = "/favicon.svg"
+  status = 200
+  force = false
+
 # SPA fallback: any unknown path returns index.html so the React app
-# can render it. We don't use client routing today, but this protects
-# us from 404s if the user bookmarks a sub-route in the future.
+# can render it. Must be the LAST redirect rule.
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
+# ─────────────────────────────────────────────────────────────────────────
+# Caching
+# ─────────────────────────────────────────────────────────────────────────
+
 # Long-lived cache on hashed assets (Vite emits content-hashed filenames).
-# HTML stays uncached so updates roll out instantly on next refresh.
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# HTML stays uncached so updates roll out instantly on next refresh.
 [[headers]]
   for = "/index.html"
   [headers.values]
     Cache-Control = "no-cache"
 
-# Tamil typing tutor doesn't make any cross-origin requests, so a
-# tight CSP is safe and worthwhile. Adjust if you add analytics later.
+# Static SEO files — cache for a day; long enough to be fast, short enough
+# that crawler-visible changes propagate quickly.
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "application/xml; charset=utf-8"
+
+# ─────────────────────────────────────────────────────────────────────────
+# Security headers
+#
+# We make zero cross-origin requests except to Google Fonts (CSS + WOFF2).
+# CSP is therefore tight and worthwhile. Adjust if analytics or other
+# third-party scripts get added.
+# ─────────────────────────────────────────────────────────────────────────
 [[headers]]
   for = "/*"
   [headers.values]
+    Content-Security-Policy = "default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'"
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"

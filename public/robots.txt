@@ -1,0 +1,51 @@
+# Tamil99 Typing Tutor — public free educational resource.
+# All crawlers, including AI/LLM training crawlers, are explicitly welcome.
+
+User-agent: *
+Allow: /
+
+# OpenAI — training crawler
+User-agent: GPTBot
+Allow: /
+
+# OpenAI — ChatGPT Search retrieval bot (separate from GPTBot)
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI — user-initiated browsing (ChatGPT with browsing)
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic — Claude crawler
+User-agent: ClaudeBot
+Allow: /
+
+# Anthropic — Claude user-initiated fetch
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google — AI/Gemini training (opt-in for crawl, separate from regular Googlebot)
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl — used by many AI training pipelines
+User-agent: CCBot
+Allow: /
+
+# ByteDance / TikTok
+User-agent: Bytespider
+Allow: /
+
+# Apple (Siri / Spotlight)
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+Sitemap: https://touchtypingtamil.netlify.app/sitemap.xml

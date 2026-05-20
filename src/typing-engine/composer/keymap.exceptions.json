@@ -1,0 +1,458 @@
+[
+  {
+    "keys": [
+      "h",
+      "f",
+      "W"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷ",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 107
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "f"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷ்",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 172
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "a"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyA",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷ",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 198
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "q"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyQ",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷா",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 224
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "s"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyS",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷி",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 250
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "w"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷீ",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 276
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "d"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyD",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷு",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 302
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "e"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyE",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷூ",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 328
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "g"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyG",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷெ",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 354
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "t"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyT",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷே",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 380
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "r"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyR",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷை",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 406
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "c"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyC",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷொ",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 432
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "x"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyX",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷோ",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 458
+  },
+  {
+    "keys": [
+      "h",
+      "f",
+      "W",
+      "z"
+    ],
+    "inputs": [
+      {
+        "code": "KeyH",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyF",
+        "shift": false,
+        "altGr": false
+      },
+      {
+        "code": "KeyW",
+        "shift": true,
+        "altGr": false
+      },
+      {
+        "code": "KeyZ",
+        "shift": false,
+        "altGr": false
+      }
+    ],
+    "output": "க்‌ஷௌ",
+    "reason": "contains ZWNJ (U+200C)",
+    "sourceLine": 484
+  }
+]

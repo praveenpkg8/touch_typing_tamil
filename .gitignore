@@ -33,3 +33,7 @@ coverage/
 
 # Netlify local CLI state
 .netlify/
+
+# Local-only artifacts (auditing screenshots, throwaway scripts)
+screenshots/
+scripts/capture_screenshot.py

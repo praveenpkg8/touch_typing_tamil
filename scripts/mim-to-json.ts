@@ -16,6 +16,11 @@ const REPO_ROOT = resolve(import.meta.dirname, '..');
 const MIM_PATH = resolve(REPO_ROOT, 'src/typing-engine/composer/ta-tamil99.mim');
 const KEYMAP_PATH = resolve(REPO_ROOT, 'src/typing-engine/composer/keymap.json');
 const FIXTURES_PATH = resolve(REPO_ROOT, 'src/typing-engine/composer/keymap.fixtures.json');
+// Runtime-only subset: just the exceptions array. The full fixtures file is
+// 257KB (mostly the 666-entry compositions test oracle); the composer only
+// needs the 14 ZWNJ exception entries at runtime. Splitting saves ~179KB
+// gzipped from the production bundle.
+const EXCEPTIONS_PATH = resolve(REPO_ROOT, 'src/typing-engine/composer/keymap.exceptions.json');
 
 // ─────────────────────────────────────────────────────────────────────────
 // US-QWERTY bridge: .mim key character → event.code + shift
@@ -467,11 +472,14 @@ function main(): void {
   const { keymap, fixtures } = buildOutputs(entries, sourceSha256);
   const keymapJson = serialize(keymap);
   const fixturesJson = serialize(fixtures);
+  // Runtime-only subset for the app bundle — just the exceptions array.
+  const exceptionsJson = serialize(fixtures.exceptions);
 
   if (checkMode) {
     let ok = true;
     const existingKeymap = readFileSync(KEYMAP_PATH, 'utf8');
     const existingFixtures = readFileSync(FIXTURES_PATH, 'utf8');
+    const existingExceptions = readFileSync(EXCEPTIONS_PATH, 'utf8');
     if (existingKeymap !== keymapJson) {
       console.error(`keymap.json drifted from ta-tamil99.mim`);
       ok = false;
@@ -480,19 +488,25 @@ function main(): void {
       console.error(`keymap.fixtures.json drifted from ta-tamil99.mim`);
       ok = false;
     }
+    if (existingExceptions !== exceptionsJson) {
+      console.error(`keymap.exceptions.json drifted from ta-tamil99.mim`);
+      ok = false;
+    }
     if (!ok) {
-      console.error(`Re-run \`pnpm mim:build\` and commit the regenerated files`);
+      console.error(`Re-run \`npm run mim:build\` and commit the regenerated files`);
       process.exit(1);
     }
-    console.log('OK: keymap.json and keymap.fixtures.json are in sync with ta-tamil99.mim');
+    console.log('OK: keymap.json, keymap.fixtures.json, and keymap.exceptions.json are in sync with ta-tamil99.mim');
     return;
   }
 
   writeFileSync(KEYMAP_PATH, keymapJson);
   writeFileSync(FIXTURES_PATH, fixturesJson);
+  writeFileSync(EXCEPTIONS_PATH, exceptionsJson);
 
   console.log(`Wrote ${KEYMAP_PATH}`);
   console.log(`Wrote ${FIXTURES_PATH}`);
+  console.log(`Wrote ${EXCEPTIONS_PATH}`);
   console.log(`Summary:`);
   console.log(`  Atomic unshifted: ${Object.keys(keymap.unshifted).length}`);
   console.log(`  Atomic shifted:   ${Object.keys(keymap.shifted).length}`);

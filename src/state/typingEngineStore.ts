@@ -20,7 +20,9 @@ import {
   type PredictedKey,
 } from '../typing-engine/composer/index.ts';
 import { Validator, type MistakeKind } from '../typing-engine/validator/index.ts';
-import keymapFixtures from '../typing-engine/composer/keymap.fixtures.json' with { type: 'json' };
+// Runtime imports only the 7KB exceptions array — the full 256KB fixtures
+// file is a test oracle and stays out of the production bundle.
+import keymapExceptions from '../typing-engine/composer/keymap.exceptions.json' with { type: 'json' };
 import {
   CURRENT_SCHEMA_VERSION,
   DEFAULT_USER_ID,
@@ -216,7 +218,7 @@ export const useTypingEngine = create<TypingEngineStore>((set, get) => ({
     const now = new Date();
     const targetText = getCurrentDrillTarget(lesson, 0, 0);
 
-    const composer = new KeyComposer(keymapFixtures.exceptions);
+    const composer = new KeyComposer(keymapExceptions);
     const validator = new Validator(targetText);
 
     const active: ActiveSessionData = {
@@ -258,7 +260,7 @@ export const useTypingEngine = create<TypingEngineStore>((set, get) => ({
     const now = new Date();
     const targetText = text;
 
-    const composer = new KeyComposer(keymapFixtures.exceptions);
+    const composer = new KeyComposer(keymapExceptions);
     const validator = new Validator(targetText);
 
     const active: ActiveSessionData = {
@@ -316,7 +318,7 @@ export const useTypingEngine = create<TypingEngineStore>((set, get) => ({
     const targetText = getCurrentDrillTarget(lesson, nextDrill, nextRepeat);
 
     // New composer + validator for the new drill (clean state per drill).
-    state.active.composer = new KeyComposer(keymapFixtures.exceptions);
+    state.active.composer = new KeyComposer(keymapExceptions);
     state.active.validator = new Validator(targetText);
     state.active.drillContext = {
       lesson,

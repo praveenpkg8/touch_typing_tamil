@@ -1,18 +1,153 @@
 <!doctype html>
-<html lang="en">
+<html lang="ta">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary identification -->
+    <title>Tamil99 Typing Tutor — Free Tamil touch-typing practice</title>
+    <meta name="description" content="Free in-browser Tamil typing tutor for the Tamil99 keyboard layout. 21 structured lessons from home row to full sentences. No signup, no tracking — all progress stays on your device." />
+    <link rel="canonical" href="https://touchtypingtamil.netlify.app/" />
+    <meta name="author" content="Praveen G." />
+    <meta name="theme-color" content="#f59e0b" />
+
+    <!-- Open Graph / Twitter Card — for share previews on WhatsApp, Twitter, etc. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tamil99 Typing Tutor" />
+    <meta property="og:title" content="Tamil99 Typing Tutor — Free Tamil touch-typing practice" />
+    <meta property="og:description" content="Free in-browser Tamil typing tutor for the Tamil99 keyboard layout. 21 structured lessons, no signup, runs entirely on your device." />
+    <meta property="og:url" content="https://touchtypingtamil.netlify.app/" />
+    <meta property="og:locale" content="ta_IN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Tamil99 Typing Tutor" />
+    <meta name="twitter:description" content="Free Tamil touch-typing practice for the Tamil99 keyboard layout. No signup, no tracking." />
+
+    <!-- Favicon (inline SVG, no extra request) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
     />
-    <title>Tamil99 Typing Tutor</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    />
+
+    <!-- Structured data: SoftwareApplication + LearningResource + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Tamil99 Typing Tutor",
+      "url": "https://touchtypingtamil.netlify.app/",
+      "description": "Free browser-based touch-typing tutor for the Tamil99 keyboard layout. 21 structured lessons covering home row consonants through full Tamil sentences, with real-time accuracy and speed feedback. No signup required; all progress stored locally on the device.",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any (modern web browser)",
+      "browserRequirements": "Requires JavaScript and a physical keyboard",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "inLanguage": ["ta", "en"],
+      "isAccessibleForFree": true,
+      "featureList": [
+        "21 structured Tamil typing lessons",
+        "Tamil99 keyboard layout with visual finger-zone guidance",
+        "Real-time grapheme-level accuracy tracking",
+        "Graphemes-per-minute and keystrokes-per-minute metrics",
+        "Targeted spaced-repetition drills for weak characters",
+        "Custom practice mode — paste any Tamil text",
+        "Local-only data storage; no account required",
+        "JSON export and import for progress backup"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LearningResource",
+      "name": "Tamil99 Typing Tutor — 21-Lesson Curriculum",
+      "url": "https://touchtypingtamil.netlify.app/",
+      "description": "A sequenced 21-lesson curriculum teaching touch typing on the Tamil99 keyboard layout, from home-row consonants and vowels through pulli, gemination, soft-hard pairs, words, and full Tamil sentences.",
+      "teaches": "Tamil touch typing using the Tamil99 keyboard layout",
+      "inLanguage": "ta",
+      "educationalLevel": "Beginner to Intermediate",
+      "learningResourceType": "Interactive exercise",
+      "isAccessibleForFree": true,
+      "about": {
+        "@type": "Thing",
+        "name": "Tamil99 keyboard layout",
+        "description": "Standard Tamil keyboard layout defined by the Government of Tamil Nadu in 1999 and adopted by ISO/BIS."
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Tamil99 Typing Tutor",
+      "url": "https://touchtypingtamil.netlify.app/",
+      "inLanguage": "ta"
+    }
+    </script>
   </head>
   <body class="bg-slate-50 text-slate-900">
+    <!--
+      Static prose for crawlers — visually hidden, semantically accessible.
+      The React app replaces nothing here; React mounts into #root below.
+      This block is the only crawlable text in the document and exists so
+      Google's first-wave indexing, AI search crawlers (GPTBot, ClaudeBot,
+      PerplexityBot — which do not render JavaScript), and share-preview
+      generators have something substantive to index.
+    -->
+    <article id="seo-description" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);" aria-hidden="true">
+      <h1>Tamil99 Typing Tutor — Free Tamil Touch-Typing Practice</h1>
+      <p>
+        Tamil99 Typing Tutor is a free, browser-based tool for learning touch typing
+        on the Tamil99 keyboard layout — the standard Tamil keyboard layout defined
+        by the Government of Tamil Nadu and adopted by ISO/BIS. It offers
+        21 structured lessons that begin with home-row consonants and vowels and
+        progress through pulli, gemination, soft-hard pairs, words, and full
+        Tamil sentences, finishing with speed and accuracy challenges. The app
+        requires no account or sign-in, stores all progress locally on the device
+        using IndexedDB, and collects no data. A recommendation engine tracks
+        per-grapheme accuracy across sessions and generates targeted spaced-repetition
+        drills for characters the learner struggles with. A visual keyboard shows
+        finger-zone colour coding and predicts the next required key. Custom
+        practice mode accepts any pasted Tamil text. Suitable for beginners,
+        students preparing for typing exams, Tamil writers, and anyone who wants
+        to learn the Tamil99 keyboard layout. Free to use at touchtypingtamil.netlify.app.
+      </p>
+      <h2>Lesson topics</h2>
+      <ul>
+        <li>L01–L02 — Home row consonants (mei) and vowels (uyir)</li>
+        <li>L03–L07 — Uyirmei combinations, top row, long vowels, full character matrix</li>
+        <li>L08–L13 — Top/bottom row consonants, pulli, gemination, soft-hard pairs</li>
+        <li>L14–L19 — Words, family terms, numbers, greetings, simple and complex sentences</li>
+        <li>L20–L21 — Speed practice and accuracy challenge</li>
+      </ul>
+    </article>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <noscript>
+      <div style="max-width: 36rem; margin: 4rem auto; padding: 1.5rem; font-family: sans-serif; color: #1e293b; line-height: 1.6;">
+        <h1 style="font-size: 1.75rem; margin: 0 0 0.5rem;">Tamil99 Typing Tutor</h1>
+        <p>
+          This tool requires JavaScript to run. Please enable JavaScript in your
+          browser, then refresh the page to begin practising Tamil typing on
+          the Tamil99 keyboard layout. All progress is stored locally on your
+          device; no account or sign-in is required.
+        </p>
+      </div>
+    </noscript>
   </body>
 </html>

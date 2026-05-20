@@ -8,6 +8,34 @@
   .font-tamil {
     font-family: var(--font-tamil);
   }
+
+  /*
+   * Site-wide focus indicators. The audience for this app is by definition
+   * keyboard users, so missing focus rings would be ironic. Tailwind's
+   * default :focus-visible ring works, but Tailwind 4 doesn't enable it
+   * globally — we have to apply it ourselves at base layer.
+   */
+  button:focus-visible,
+  [tabindex]:focus-visible,
+  a:focus-visible,
+  textarea:focus-visible,
+  input:focus-visible {
+    outline: 2px solid #f59e0b;     /* amber-500 — matches primary CTA */
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  /*
+   * Reduce font-swap CLS on Tamil text by matching fallback metrics to
+   * Noto Sans Tamil. Numbers tuned for Tamil-script body copy at 1rem.
+   */
+  @font-face {
+    font-family: 'Noto Sans Tamil Fallback';
+    src: local('Latha'), local('sans-serif');
+    size-adjust: 110%;
+    ascent-override: 90%;
+    descent-override: 25%;
+  }
 }
 
 @layer utilities {
